@@ -6,6 +6,10 @@
   font-family: NeueMontreal;
   src: url(./assets/fonts/NeueMontreal-Light.otf);
 }
+@font-face {
+  font-family: founderGrotesk;
+  src: url(./assets/fonts/Founders.otf);
+}
 
 * {
   margin: 0;

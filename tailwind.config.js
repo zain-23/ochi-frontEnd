@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         NeueMontreal: "NeueMontreal",
+        founderGrotesk: "founderGrotesk",
       },
     },
   },
