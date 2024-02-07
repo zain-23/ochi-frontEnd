@@ -1,4 +1,6 @@
 import { FaArrowUpLong } from "react-icons/fa6";
+import img from "../assets/content-image01.jpg";
+import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
@@ -8,7 +10,15 @@ const Landing = () => {
           <div key={i}>
             <div className="w-fit flex items-end overflow-hidden">
               {i === 1 && (
-                <div className="w-[8vw] rounded-md h-[5.4vw] mr-[1vw] relative top-0"></div>
+                <motion.div
+                  initial={{ width: "0%" }}
+                  animate={{ width: "8vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className="w-[8vw] rounded-md h-[5.4vw] mr-[1vw] relative top-0 bg-cover bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage: `url(${img})`,
+                  }}
+                ></motion.div>
               )}
               <h1 className="text-[8vw] leading-[.8] uppercase -mb-[.1vw]">
                 {item}
