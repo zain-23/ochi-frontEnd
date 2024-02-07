@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="w-full px-20 py-8 flex justify-between items-center fixed">
+    <div className="w-full px-20 py-8 flex justify-between items-center fixed backdrop-blur-sm">
       <div className="">
         <svg
           width="72"

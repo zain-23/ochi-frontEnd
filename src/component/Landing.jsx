@@ -2,10 +2,10 @@ import { FaArrowUpLong } from "react-icons/fa6";
 
 const Landing = () => {
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <div className="w-full h-screen pt-1">
       <div className="font-founderGrotesk mt-52 px-20">
         {["We create", "Eye-opening", "PRESENTATIONS"].map((item, i) => (
-          <div className="">
+          <div key={i}>
             <div className="w-fit flex items-end overflow-hidden">
               {i === 1 && (
                 <div className="w-[8vw] rounded-md h-[5.4vw] mr-[1vw] relative top-0"></div>
