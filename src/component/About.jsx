@@ -1,4 +1,5 @@
-import React from "react";
+import { motion } from "framer-motion";
+import img from "../assets/Homepage-Photo-663x469.jpg";
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
           .
         </h1>
       </div>
-      <div className="border-t border-zinc-500 px-20 py-10">
+      <div className="border-t border-zinc-500 px-20 pt-10 pb-36">
         <div className="grid grid-cols-8">
           <div className="col-span-4">
             <h4 className="text-[1.2vw] font-semibold tracking-wider">
@@ -42,6 +43,27 @@ const About = () => {
               We believe the mix of strategy and design (with a bit of coffee)
               is what makes your message clear, convincing, and captivating.
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-zinc-500 px-20 py-10">
+        <div className="grid grid-cols-2">
+          <div className="col-span-1">
+            <h2 className="leading-none text-[4vw] font-bold">Our approach:</h2>
+            <button className="uppercase py-4 px-8 bg-black text-white text-[1vw] font-bold rounded-full mt-6 flex justify-between items-center gap-x-4">
+              Read more
+              <div className="w-3 h-3 bg-white rounded-full"></div>
+            </button>
+          </div>
+          <div className="col-span-1">
+            <motion.img
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              src={img}
+              className="w-full h-full rounded-xl"
+              alt=""
+            />
           </div>
         </div>
       </div>
