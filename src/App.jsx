@@ -3,6 +3,7 @@ import About from "./component/About";
 import Cards from "./component/Cards";
 import Eyes from "./component/Eyes";
 import Featured from "./component/Featured";
+import Footer from "./component/Footer";
 import Landing from "./component/Landing";
 import Marquee from "./component/Marquee";
 import Navbar from "./component/Navbar";
@@ -19,6 +20,7 @@ function App() {
       <Eyes />
       <Featured />
       <Cards />
+      <Footer />
     </div>
   );
 }

@@ -32,12 +32,12 @@ const Landing = () => {
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((data, i) => (
-          <p key={i} className="text-xl leading-none">
+          <p key={i} className="text-xl leading-none font-bold">
             {data}
           </p>
         ))}
         <div className="flex items-center gap-5">
-          <div className="py-2 px-6 border-[1px] border-zinc-500 text-lg uppercase rounded-full">
+          <div className="py-2 px-6 border-[1px] border-zinc-500 text-lg uppercase rounded-full font-bold">
             START A PROJECT
           </div>
           <div className="w-10 h-10 border-[1px] border-zinc-500 rounded-full flex items-center justify-center">
