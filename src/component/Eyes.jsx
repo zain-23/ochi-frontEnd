@@ -3,7 +3,6 @@ import img from "../assets/Top-Viewbbcbv-1-scaled.jpg";
 
 const Eyes = () => {
   const [rotate, setRotate] = useState(0);
-  console.log(rotate);
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
       let mouseX = e.clientX;

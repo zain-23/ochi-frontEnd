@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./component/About";
 import Eyes from "./component/Eyes";
+import Featured from "./component/Featured";
 import Landing from "./component/Landing";
 import Marquee from "./component/Marquee";
 import Navbar from "./component/Navbar";
@@ -15,6 +16,7 @@ function App() {
       <Marquee />
       <About />
       <Eyes />
+      <Featured />
     </div>
   );
 }
