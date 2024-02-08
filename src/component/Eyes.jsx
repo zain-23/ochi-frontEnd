@@ -7,7 +7,6 @@ const Eyes = () => {
     window.addEventListener("mousemove", (e) => {
       let mouseX = e.clientX;
       let mouseY = e.clientY;
-
       const deltaX = mouseX - window.innerWidth / 2;
       const deltaY = mouseY - window.innerHeight / 2;
       let angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
@@ -19,6 +18,8 @@ const Eyes = () => {
       <div
         className="w-full h-full bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: `url(${img})` }}
+        data-scroll
+        data-scroll-speed="-.4"
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center gap-x-8">
           <div className="w-[15vw] h-[15vw] bg-white rounded-full flex justify-center items-center">
@@ -29,7 +30,7 @@ const Eyes = () => {
                 }}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[6] w-full"
               >
-                <div className="h-10 w-10 rounded-full bg-white"></div>
+                <div className="h-6 w-6 rounded-full bg-white"></div>
               </div>
             </div>
           </div>
@@ -41,7 +42,7 @@ const Eyes = () => {
                 }}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[6] w-full"
               >
-                <div className="h-10 w-10 rounded-full bg-white"></div>
+                <div className="h-6 w-6 rounded-full bg-white"></div>
               </div>
             </div>
           </div>

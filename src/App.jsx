@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./component/About";
+import Cards from "./component/Cards";
 import Eyes from "./component/Eyes";
 import Featured from "./component/Featured";
 import Landing from "./component/Landing";
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Eyes />
       <Featured />
+      <Cards />
     </div>
   );
 }

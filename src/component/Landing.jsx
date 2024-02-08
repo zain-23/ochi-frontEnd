@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
-    <div className="w-full h-screen pt-1">
+    <div className="w-full h-screen pt-1" data-scroll data-scroll-speed="-.3">
       <div className="font-founderGrotesk mt-52 px-20">
         {["We create", "Eye-opening", "PRESENTATIONS"].map((item, i) => (
           <div key={i}>
